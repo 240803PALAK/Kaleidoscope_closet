@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recommendation</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
+</head>
+<body>
+<div class="card-container">
+    {% for item in data %}
+            <div class="card">
+                <a href="{{ item[1] }}">
+                <img src="{{ url_for('static', filename="Kaleidoscope/" + item[3]+ ".jpg") }}" alt="{{ item[0] }}">
+                <h2 class="pad">{{ item[0] }}</h2>
+                <h5 class="pad">₹ {{ item[2] }}</h5></a>
+            </div>
+        {% endfor %}
+</div>
+</body>
+</html>

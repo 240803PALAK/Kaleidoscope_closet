@@ -1,0 +1,59 @@
+
+body{
+    background-color:  #7a3c0f;
+  }
+.pad{
+    padding: 10px; 
+}
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    justify-content: space-between; /* Space cards evenly */
+    padding: 10px;
+  }
+  
+  /* Individual card */
+  .card {
+    width: 300px; /* Adjust width as needed */
+    background-color: #fff; /* Light background for better contrast */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 15px; /* Spacing between cards */
+    overflow: hidden; /* Prevent content from overflowing the card */
+  }
+  
+  /* Card image */
+  .card img {
+    width: 100%; /* Fill the card width */
+    height: 380px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  }
+  
+  /* Card content - general styling */
+  .card a {
+    text-decoration: none; /* Remove default link underline */
+    color: #333; /* Darker text for better contrast */
+  }
+  
+  .card h2,
+  .card h5 {
+    margin: 10px 0; /* Spacing between title and subtitle */
+  }
+  
+  /* Title */
+  .card h2 {
+    font-size: 18px;
+  }
+  
+  /* Subtitle (price) */
+  .card h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Adjust padding and margin for specific elements you might have */
+  .pad {
+    padding: 5px; /* Example padding for specific content */
+  }
+  

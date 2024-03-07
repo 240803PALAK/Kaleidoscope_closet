@@ -1,0 +1,81 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <script src="https://unpkg.com/xlsx@0.17.5/dist/xlsx.full.min.js"></script>
+    <title>Kaleidoscope Closet</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tell us a little bit about yourself</h1>
+        <form id="registration-form">
+            <div class="question">
+                <label for="name">What is your name?</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="question">
+                <label for="age">What is your age?</label>
+                <select id="age" required>
+                    <option value="" disabled selected>Select an age range</option>
+                    <option value="14 - 9">14 - 9</option>
+                    <option value="15 - 21">15 - 21</option>
+                    <option value="21 - 30">21 - 30</option>
+                    <option value="31 - 35">31 - 35</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="gender">What is your gender?</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select a gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="style">What is your style?</label>
+                <select id="style" required>
+                    <option value="" disabled selected>Select a style</option>
+                    <option value="formal">Formal</option>
+                    <option value="casual">Casual</option>
+                    <option value="home wear">Homewear</option>
+                    <option value="ethenic">Ethenic</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="hairColor">What is your hair color?</label>
+                <select id="hairColor" required>
+                    <option value="" disabled selected>Select a hair color</option>
+                    <option value="dark">Dark</option>
+                    <option value="ginger red">Red</option>
+                    <option value="blonde">Blonde</option>
+                    <option value="brown">Brown</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="skinColor">What is your skin color?</label>
+                <select id="skinColor" required>
+                    <option value="" disabled selected>Select a skin color</option>
+                    <option value="white">White</option>
+                    <option value="pale">Pale</option>
+                    <option value="tanned">Tanned</option>
+                    <option value="black">Black</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="size">What is your size?</label>
+                <select id="size" required>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

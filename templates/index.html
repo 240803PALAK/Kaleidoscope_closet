@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleidoscope Closet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            loadRecommendations();
+
+            $('.wishlist-item').on('click', function() {
+                $(this).toggleClass('wishlisted');
+                window.location.href = $(this).data('url');
+            });
+
+            $('.brand').on('click', function() {
+                window.location.href = $(this).data('url');
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#recommendations">Shop by Category</a>
+            <a href="#wishlist">Wishlist</a>
+            <a href="#brands">Brands</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Kaleidoscope Closet</h1>
+            <p>Discover your perfect outfit</p>
+            <a href="/form" class="cta">Get Started</a>
+        </section>
+        <section id="recommendations">
+            <h2>Shop by Category</h2>
+            <p>Based on current trends</p>
+            <div class="recommendations">
+                <div class="recommendations-item">
+                    <a href="/men">
+                    <img src="{{ url_for('static', filename="Kaleidoscope/51.jpg") }}" alt="Outfit 2">
+                    <h3>Men</h3></a>
+                </div>
+                <div class="recommendations-item" >
+                    <a href="/kids">
+                    <img src="{{ url_for('static', filename="Kaleidoscope/15.jpg") }}" alt="Outfit 1">
+                    <h3>Kids</h3></a>
+                </div>
+                <div class="recommendations-item" >
+                    <a href="/women">
+                    <img src="{{ url_for('static', filename="Kaleidoscope/25.jpg") }}" alt="Outfit 2">
+                    <h3>Women</h3></a>
+                </div>
+                
+            </div>
+        </section>
+        <section id="wishlist">
+            <h2>Kaleidoscope Exclusives</h2>
+            <p>Based on current trends</p>
+            <div class="wishlist">
+                
+                <div class="wishlist-item">
+                    <a href="https://www.zara.com/in/en/coat-with-detachable-collar-p05940889.html?v1=317970040&v2=2351356">
+                    <img src="{{ url_for('static', filename="images/hmgoepprod (1).jpg") }}" alt="Outfit 2">
+                    <h3>Coat with Detatchable Collar</h3></a>
+                </div>
+                <div class="wishlist-item" >
+                    <a href="https://in.urbanic.com/details/patchwork-faux-fur-coat-113572?vid=122">
+                    <img src="https://img101.urbanic.com/v1/goods-pic/f61a38070c8a4f5db092b5a56a667953UR_w1440_q90.webp" alt="Outfit 2">
+                    <h3>Patchwork Faux Fur Coat</h3></a>
+                </div>
+                <div class="wishlist-item" >
+                    <a href="https://in.urbanic.com/details/faux-fur-coat-113423?vid=23">
+                    <img src="https://img101.urbanic.com/v1/goods-pic/a2ed57c7ef7d4315bfd456885cb863acUR_w1440_q90.webp" alt="Outfit 1">
+                    <h3>Faux Fur Coat</h3></a>
+                </div>
+            </div>
+        </section>
+        <section id="brands">
+            <h2>Brands</h2>
+            <p>Explore few recommended brands</p>
+            <div class="brands">
+                <div class="brand">
+                    <a href="https://www2.hm.com/en_in/index.html">
+                    <img src="{{ url_for('static', filename="images/hmgoepprod.jpg") }}" alt="Brand 1">
+                    <h3>H&M</h3></a>
+                </div>
+                <div class="brand" >
+                    <a href="https://www.ajio.com/">
+                    <img src="{{ url_for('static', filename="images/ajio.png") }}" alt="Brand 2">
+                    <h3>AJIO</h3></a>
+                </div>
+                <div class="brand" >
+                    <a href="https://www.myntra.com/">
+                    <img src="{{ url_for('static', filename="images/shop1myn.png") }}" alt="Brand 2">
+                    <h3>Myntra</h3></a>
+                </div>
+                <div class="brand" >
+                    <a href="https://in.urbanic.com/">
+                    <img src="{{ url_for('static', filename="images/expert.png") }}" alt="Brand 1">
+                    <h3>Urbanic</h3></a>
+                </div>
+                <div class="brand">
+                    <a href="https://www.zara.com/in/">
+                    <img src="{{ url_for('static', filename="images/zara.jpg") }}" alt="Brand 1">
+                    <h3>ZARA</h3></a>
+                </div>
+                <div class="brand">
+                    <a href="https://www.meesho.com/">
+                    <img src="https://images.meesho.com/images/products/334510476/hrwmh_512.webp" alt="Brand 1">
+                    <h3>Meesho</h3></a>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; 2021 Kaleidoscope Closet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

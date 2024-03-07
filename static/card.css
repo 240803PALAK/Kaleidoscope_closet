@@ -1,0 +1,73 @@
+
+.pad{
+    padding: 10px; 
+}
+.card {
+    /* Adjust these properties as needed */
+    width: 300px;
+    margin: 10px; /* Add spacing between cards */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(32, 144, 12, 0.1); /* Subtle shadow effect */
+    overflow: hidden; /* Prevent content from overflowing the card */
+  }
+  .card img {
+    width: 100%; /* Fill the width of the card */
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  }
+  .card a {
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit text color from parent element */
+  }
+  
+  .card h2 {
+    margin-top: 10px; /* Add spacing above the title */
+    margin-bottom: 5px; /* Add spacing below the title */
+  }
+  
+  .card h5 {
+    font-size: 0.8em; /* Adjust font size for subtitle */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fill viewport height */
+    background-image: url(images/kaleidogif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Hover effect - slightly scale up */
+  }
+  
+  .card a img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-price {
+    font-weight: bold;
+    color: #333;
+  }
+        

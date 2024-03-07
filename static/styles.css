@@ -1,0 +1,322 @@
+/* Reset some styles */
+a {
+  text-decoration:none;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set the background color of the page */
+  body {
+    background-color: #fff;
+  }
+
+  
+  /* Style the header */
+  header {
+    background-color: #b05311;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 2rem;
+  }
+  
+  nav a:hover {
+    background-color: #e9b98c;
+    color: #8f4d1f;
+    border-radius: 5px;
+  }
+  
+  /* Style the home section */
+  #home {
+    background-image: url(images/some.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    scroll-snap-align: start;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    color: #7a3c0f;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    color: #e2cfbc;
+    animation: fadeIn 1s ease-in-out 0.2s;
+  }
+  
+  #home .cta {
+    background-color: #7a3c0f;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-in-out 0.4s;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #home .cta:hover {
+    background-color: #fff;
+    background-image: url(images/mainbgs.png);
+    color: #8b4513;
+    border: 2px solid #8b4513;
+  }
+  
+  /* Style the recommendations section */
+  #recommendations {
+    background-color: #d2b48c;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    scroll-snap-align: start;
+  }
+  
+  #recommendations h2 {
+    font-size: 3rem;
+    color: #8b4513;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #recommendations p {
+    font-size: 1.2rem;
+    color: #333;
+    animation: fadeIn 1s ease-in-out 0.2s;
+  }
+  
+  #recommendations .recommendations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-in-out 0.4s;
+  }
+  
+  #recommendations .recommendations-item {
+    background-color: white;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #recommendations .recommendations-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #recommendations .recommendations-item a img {
+    width: 70%;
+    margin-left: 50px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  #recommendations .recommendations-item a h3 {
+    font-size: 1.2rem;
+    color: #8b4513;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #recommendations .recommendations-item.wishlisted {
+    background-color: #fff;
+    border: 2px solid #8b4513;
+  }
+  
+  /* Style the wishlist section */
+  #wishlist {
+    background-color: #fff;
+    background-image: url(images/maingbg3.gif);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    scroll-snap-align: start;
+  }
+  
+  #wishlist h2 {
+    font-size: 3rem;
+    color: #ca9671;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #wishlist p {
+    font-size: 1.2rem;
+    color: #c5b0b0;
+    animation: fadeIn 1s ease-in-out 0.2s;
+  }
+  
+  #wishlist .wishlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-in-out 0.4s;
+  }
+  
+  #wishlist .wishlist-item {
+    background-color: #d2b48c;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #wishlist .wishlist-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #wishlist .wishlist-item a img {
+    width: 70%;
+    margin-left: 50px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  #wishlist .wishlist-item h3 {
+    font-size: 1.2rem;
+    color: #d1af97;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #wishlist .wishlist-item.wishlisted {
+    background-color: #fff;
+    border: 2px solid #8b4513;
+  }
+  
+  /* Style the brands section */
+  #brands {
+    background-color: #6d3710;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    scroll-snap-align: start;
+  }
+  
+  #brands h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #brands p {
+    font-size: 1.2rem;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out 0.2s;
+  }
+  
+  #brands .brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-in-out 0.4s;
+  }
+  
+  #brands .brand {
+    background-color: #d2b48c;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  #brands .brand:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #brands .brand a img {
+    width: 70%;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  #brands .brand h3 {
+    font-size: 1.2rem;
+    color: #cb9b7a;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Add smooth scrolling */
+  html {
+    scroll-behavior:smooth;
+  }
+  
+  /* Add animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  footer{
+    background-color: #d2b48c;
+  }
